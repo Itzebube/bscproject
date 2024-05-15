@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <style>
+        body{
+            margin: auto;
+            width: 600px;
+            color: rgb(240, 79, 79);
+            /* background-color: rgb(241, 73, 73); */
+            background-color: aliceblue;
+        }
+        input, textarea {
+          margin-bottom: 16px;
+          margin: 16px 24px ;
+           height: 2rem;
+          /* width: 150%;  */
+          align-items: center;
+         
+        }
+        
+        section{
+            /* text-align: center; */
+        }
+
+        div{
+            height: 50%; 
+            margin-left: 40px;
+            margin-right: 40px;
+            text-align: center;
+            margin-top: 12px;
+            box-sizing: 100%;
+
+         }  
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            box-shadow: 0 0 2px rgba(0, 0, 0 ,1);
+             background-color: rgb(207, 228, 247);
+            /* background-color: aliceblue; */
+            /* display: grid; */
+            /* place-items: center; */
+        }
+       
+
+        .child{
+            box-shadow: 0px 0px 2px rgba(0, 0, 0 ,1);
+            width: 99%;
+            height: 93%;
+             background-color: aliceblue;
+            /* max-width: 960px; */
+            /* border-width: 80%; */
+        }
+
+        #detailpage{
+            margin-top: 24px;
+        }
+
+        .header{
+            text-align: center;
+        }
+        button{
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header" style="text-align: center;">Book for an Ambulance</h1>
+    <div class="container">
+        
+       <div class="child">
+        <section id="detailpage">
+           <form action="request.php" method="post">
+            <label for="name" id="firstnames">Name of applicant</label><br>
+            <input type="text" name="first-name" id="name" required placeholder="first name" name><br>
+            <input type="text" name="last-name" id="name" required placeholder="last name"><br>
+            <label for="location">Location</label><br>
+            <input type="text" name="location" id="location" required><br>
+            <label for="phone">Phone number</label><br>
+            <input type="tel" name="phone" id="phone" required><br>      
+            <label for="description"> Description</label><br>
+            <textarea type="text" name="description" id="description" placeholder="optional"> </textarea><br>           
+        </section>
+        <section id="submit">
+            <button>Sumbit</button>
+        </section>
+    </form>
+       </div>
+    </div>
+</div>
+<p>For Tracking please <em>click below</em></p>
+ <a href="track.html" target="_blank">
+     <input type="submit" value="Track" id="btn">
+ </a>
+</body>
+</html>

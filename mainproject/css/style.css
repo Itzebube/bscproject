@@ -1,0 +1,38 @@
+body {
+    /* background-color: red; */
+    background-color: white;
+
+}
+
+h1 {
+    /* background: white; */
+    text-align: center;
+    padding: 0px 2px;
+    font-size: 60px;
+    /* background: red; */
+    color: red;
+    
+}
+
+#request {
+    text-align: center;
+}
+
+.homepage {
+    margin: 20px 0px;
+}
+#btn {
+   height: 60%;
+   width: 10%; 
+   font-size: large;
+   
+}
+div {
+    margin-top: 57px;
+}
+
+p {
+    margin-bottom: 2px;
+    color: red;
+    font-weight: bolder;
+}
